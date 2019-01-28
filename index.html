@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    
+<!-- Start of the game -->
+<div id = start_container>
+    <!-- Static Game Logo -->
+    <h1 class = "logo">South Park Trivia!</h1>
+
+    <button id = start_button>Start</button>
+</div>
+
+
+<!-- During Gameplay Container -->
+<div id = mid_game_container>
+
+<div class="wrapper">
+
+    <!-- Static Game Logo -->
+    <h1 class = "logo">South Park Trivia!</h1>
+
+    <!-- Game Timer -->
+    <h1 id = "timer_line">Time Remaining: <span id = "timer_number">60 Seconds</span></h1>
+    
+    <!-- Game Questions -->
+    <!--------------------- Questions ----------------------->
+    <h3>1. This episode was the first "South Park" episode to air on television...</h1>
+        
+        <input type="radio" name="q1" value="1">Volcano
+        <input type="radio" name="q1" value="2">Tom's Rhinoplasty 
+        <input type="radio" name="q1" value="3">Mr. Hankey, The Christmas Poo
+        <input type="radio" name="q1" value="4">Cartman Gets an Anal Probe <!--Right answer -->
+        
+        
+    <!--------------------- Questions ----------------------->    
+    <h3>2. In this episode, we find out Cartman's mom is a hermaphrodite.</h1>
+        
+        <input type="radio" name="q2" value="5">Cartman's Mom Is a Dirty Slut 
+        <input type="radio" name="q2" value="6">Chickenlover 
+        <input type="radio" name="q2" value="7">Cartman's Mom is STill a Dirty Slut <!--Right answer -->
+        <input type="radio" name="q2" value="8">Summer Sucks
+
+        
+    <!--------------------- Questions ----------------------->   
+    <h3>3. What does Towelie like to do?</h1>
+    
+        <input type="radio" name="q3" value="9">Something You Can Do With YOur Finger <!--Right answer -->
+        <input type="radio" name="q3" value="10">Cartman Joins N.A.M.B.L.A.
+        <input type="radio" name="q3" value="11">Timmy 2000
+        <input type="radio" name="q3" value="12">Quintuplets 2000
+        
+    <!--------------------- Questions ----------------------->    
+    <h3>4. What is the name of the school counselor for South Park Elementary?</h1>
+        
+        <input type="radio" name="q4" value="13">Mr Mackey <!--Right answer -->
+        <input type="radio" name="q4" value="14">Mr Hanky 
+        <input type="radio" name="q4" value="15">Stan Marsh
+        <input type="radio" name="q4" value="16">Towelie
+            
+        
+    <!--------------------- Questions ----------------------->
+    <h3>5. In this episode, Cartman and the gang start their own boy band.</h1>
+        
+        <input type="radio" name="q5" value="17">Cartman Joins N.A.M.B.L.A. 
+        <input type="radio" name="q5" value="18">Timmy 2000 
+        <input type="radio" name="q5" value="19">Quintuplets 2000
+        <input type="radio" name="q5" value="20">Something You Can Do With YOur Finger <!--Right answer -->
+    
+    <!--------------------- Questions ----------------------->   
+    <h3>6. What is the name of the fourth grade teacher Stan, Kyle, Cartman, and Kenny temporarily had?</h1>
+        
+        <input type="radio" name="q6" value="21">Mr Hanky 
+        <input type="radio" name="q6" value="22">Mrs. Choksondik <!-- Right answer -->
+        <input type="radio" name="q6" value="23">Strong Woman
+        <input type="radio" name="q6" value="24">Timmy
+        
+        
+        <br>
+
+        
+        <button id = done_button>Done!</button>
+        
+    </div>
+</div>       
+        
+        
+        
+<!-- End of the game -->
+<div id = end_container>
+
+    <!-- Static Game Logo -->
+    <h1 class = "logo">South Park Trivia</h1>
+        
+    <h1 id = "done">All Done!</h1>
+    <br>
+    
+    <h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+    <h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+    <h1>Unanswered: <span id = "unanswered">0</span></h1>
+</div>
+    
+    <!-- Link in JavaScript -->
+    <script src="../Trivia-game/assets/javescript/trivia.js"></script>
+		
+	</body>
+    </html>
